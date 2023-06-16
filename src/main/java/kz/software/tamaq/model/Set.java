@@ -22,6 +22,7 @@ public class Set {
     @JoinColumn(name="type_id", referencedColumnName = "id")
     private Type type;
 
+
     @Column(name="count")
     private Long count;
 
@@ -30,5 +31,4 @@ public class Set {
 
     @Column(name="date")
     private LocalDateTime date;
-
 }
