@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" th:href=" @{ style/style.css }">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main_block">
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <img th:src="@{ icons/Logo.png }" alt="logo" class="logo">
+                </a>
+                <button class="logIng_btn">
+                    Log In
+                </button>
+            </nav>
+            <div class="main_panel">
+                <div class="main_title">
+                    Make your life easier
+                </div>
+                <div class="main_action">
+                    <div class="cafeteria_choosing">
+                        <div class="cafeteria">
+                            <a href="#">
+                                <img th:src="@{ icons/cafeteria_1.png }" alt="cafeteria1">
+                                <span>Cafeteria-1</span>
+                            </a>
+                        </div>
+                        <div class="cafeteria">
+                            <a href="#">
+                                <img th:src="@{ icons/cafeteria_2.png }" alt="cafeteria2">
+                                <span>Cafeteria-2</span>
+                            </a>
+                        </div>
+                        <div class="cafeteria">
+                            <a href="#">
+                                <img th:src="@{ icons/cafeteria_3.png }" alt="cafeteria3">
+                                <span>Cafeteria-3</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search_food">
+                        <div class="search_input">
+                            <label class="left_part" for="searchFoodInput">
+                                <img th:src="@{ icons/search_restaurant.svg }" alt="search_restaurant">
+                            </label>
+                            <input id="searchFoodInput" class="right_part" placeholder="The name of food">
+                        </div>
+                        <button class="optimal_food_btn">
+                            Optimal food
+                        </button>
+                    </div>
+                    <div class="food_choosing">
+                        <div class="food">
+                            <a href="#">
+                                <img th:src="@{ icons/korean.png }" alt="korean">
+                                <span>Korean</span>
+                            </a>
+                        </div>
+                        <div class="food">
+                            <a href="#">
+                                <img th:src="@{ icons/halal.png }" alt="halal">
+                                <span>Halal</span>
+                            </a>
+                        </div>
+                        <div class="food">
+                            <a href="#">
+                                <img th:src="@{ icons/vegeterian.png }" alt="vegeterian">
+                                <span>Vegeterian</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="polygon">
+            <img th:src="@{ img/polygon.png }" alt="polygon">
+        </div>
+    </div>
+    <div class="dish_block">
+        <div class="container">
+            <div class="dish_title">
+                <img th:src="@{ icons/actual.png }" alt="actualDay">
+                <span>Today's dishes - 23.05.2023 Tuesday</span>
+            </div>
+            <section class="dish_content">
+                <div class="food_type_list">
+                    <div class="food_type_list_name">Halal</div>
+                    <div class="food_type_list_name">Korean</div>
+                    <div class="food_type_list_name">Vegeterian</div>
+                </div>
+                <div class="cafeterias">
+
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-1</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+                    
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-2</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+
+                    <div class="cafeteria">
+                        <a href="#" class="cafeteria_name">Cafeteria-3</a>
+                        <div class="cafeteria_food">
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Lunch
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                </div> 
+                            </div>
+                            <div class="cafeteria_food_type">
+                                <div class="cafeteria_food_time_title">
+                                    Dinner
+                                </div>   
+                                <div class="cafeteria_food_time_setOfFood">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafeteria_divider_line">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

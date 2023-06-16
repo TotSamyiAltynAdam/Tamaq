@@ -1,52 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
-
-body {
-  background-color: #ffca5b;
+  
+body{
+    background-color: #FFCA5B;
 }
 
 .container {
-  max-width: 80%;
-  margin: 0 auto;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .main_block {
-<<<<<<< HEAD
-  min-height: 803px;
-  border: 1px solid red;
-}
-
-.main_block nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 186px;
-  border: 1px solid red;
-}
-
-.main_block nav img {
-  width: 165px;
-  height: 146px;
-}
-
-.main_block nav .button {
-  width: 165px;
-  height: 49px;
-  border-radius: 35px;
-  background-color: #2d9e84;
-
-  padding-top: 10px;
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  font-weight: 600;
-=======
     min-height: 803px;
 }
 
@@ -74,74 +44,30 @@ body {
     color: white;
     font-size: 25px;
     font-weight: 600;
->>>>>>> 5bc8b3ddcdd2966042ba122f324155f3a02ab619
 }
+
 
 .main_block .main_panel {
-  display: flex;
-  flex-direction: column;
-  margin-top: 38px;
-  height: 455px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+    height: 455px;
 }
 .main_block .main_panel .main_title {
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
 .main_block .main_panel .main_action {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 42px;
 }
+
 
 .main_block .main_panel .main_action .cafeteria_choosing {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  min-width: 270px;
-}
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria {
-  display: flex;
-  flex-direction: column;
-}
-.main_block
-  .main_panel
-  .main_action
-  .cafeteria_choosing
-  .cafeteria:nth-child(2) {
-  margin-top: 16px;
-  margin-left: 89px;
-}
-.main_block
-  .main_panel
-  .main_action
-  .cafeteria_choosing
-  .cafeteria:nth-child(3) {
-  margin-top: 16px;
-  margin-left: 176px;
-}
-
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria img {
-  width: 75px;
-  height: 75px;
-}
-.main_block .main_panel .main_action .cafeteria_choosing .cafeteria span {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.main_block .main_panel .main_action .search_food {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  width: 525px;
-  padding-top: 26px;
-=======
     display: flex;
     flex-direction: column;
     min-width: 270px;
@@ -177,97 +103,26 @@ body {
     flex-direction: column;
     width: 525px;
     padding-top: 26px;
->>>>>>> 5bc8b3ddcdd2966042ba122f324155f3a02ab619
 }
-.main_block .main_panel .main_action .search_food .search_input {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+.main_block .main_panel .main_action .search_food .search_input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-<<<<<<< HEAD
-.main_block .main_panel .main_action .search_food .search_input .left_part {
-  background-color: #2d9e84;
-  width: 93px;
-  height: 80px;
-  border-radius: 33px 0 0 33px;
-=======
 .main_block .main_panel .main_action .search_food .search_input .left_part{
     background-color: #2D9E84;
     cursor: pointer;
     width: 93px;
     height: 80px;
     border-radius: 33px 0 0 33px;
->>>>>>> 5bc8b3ddcdd2966042ba122f324155f3a02ab619
 }
-.main_block .main_panel .main_action .search_food .search_input .left_part img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 6px;
-  width: 67px;
-  height: 67px;
+.main_block .main_panel .main_action .search_food .search_input .left_part img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+    width: 67px;
+    height: 67px;
 }
-<<<<<<< HEAD
-.main_block .main_panel .main_action .search_food .search_input .right_part {
-  font-size: 20px;
-  font-weight: bold;
-  width: 432px;
-  border-radius: 0 33px 33px 0;
-  color: #aeabab;
-  padding: 29px 0 0 29px;
-  background-color: white;
-}
-
-.main_block .main_panel .main_action .search_food .optimal_food {
-  margin: 0 auto;
-  margin-top: 168px;
-  width: 255px;
-  height: 81px;
-  border-radius: 16px;
-  background-color: white;
-}
-.main_block .main_panel .main_action .search_food .optimal_food center {
-  padding-top: 23px;
-  color: #ffca5b;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.main_block .main_panel .main_action .food_choosing {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  margin-left: 15px;
-  border: 1px solid red;
-}
-.main_block .main_panel .main_action .food_choosing .food {
-  display: flex;
-  flex-direction: column;
-}
-.main_block .main_panel .main_action .food_choosing .food:nth-child(1) {
-  margin-left: 180px;
-}
-.main_block .main_panel .main_action .food_choosing .food:nth-child(2) {
-  margin-top: 16px;
-  margin-left: 90px;
-}
-.main_block .main_panel .main_action .food_choosing .food:nth-child(3) {
-  margin-top: 16px;
-}
-
-.main_block .main_panel .main_action .food_choosing .food img {
-  width: 75px;
-  height: 75px;
-}
-.main_block .main_panel .main_action .food_choosing .food span {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.main_block .polygon {
-  margin-top: 30px;
-}
-=======
 .main_block .main_panel .main_action .search_food .search_input .right_part{
     cursor: pointer;
     font-weight: bold;
@@ -417,4 +272,3 @@ body {
     width: 100%;
     background-color: #FFCA5B;
 }
->>>>>>> 5bc8b3ddcdd2966042ba122f324155f3a02ab619
