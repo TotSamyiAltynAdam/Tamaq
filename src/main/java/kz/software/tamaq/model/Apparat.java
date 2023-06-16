@@ -20,4 +20,5 @@ public class Apparat {
     @ManyToOne
     @JoinColumn(name="cafeteria_id")
     private Cafeteria cafeteria;
+
 }

@@ -18,5 +18,5 @@ public class Report {
 
     @ManyToOne
     @JoinColumn(name="set_id")
-    private Set set;
+    private FoodSet set;
 }

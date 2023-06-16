@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 @Table(name="sets")
 @Data
-public class Set {
+public class FoodSet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")

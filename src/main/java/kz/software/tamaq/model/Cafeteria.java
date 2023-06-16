@@ -18,6 +18,5 @@ public class Cafeteria {
     private String name;
 
     @OneToMany(mappedBy = "cafeteria")
-    @JoinColumn(name = "cafeteria_id")
     private List<Apparat> apparatList;
 }
