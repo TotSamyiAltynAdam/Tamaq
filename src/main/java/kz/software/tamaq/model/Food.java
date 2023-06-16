@@ -23,6 +23,9 @@ public class Food {
     @Column(name="price")
     private Long price;
 
+    @OneToMany(mappedBy = "food")
+    private List<Feedback> feedbackList;
+
     @ManyToMany
     private List<Ingredient> ingredientsList;
 }

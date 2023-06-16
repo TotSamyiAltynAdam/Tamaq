@@ -4,20 +4,19 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name="apparats")
+@Table(name="reports")
 @Data
-public class Apparat {
-
+public class Report {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
 
-    @Column(name="name")
-    private String name;
-
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User owner;
 
     @ManyToOne
-    @JoinColumn(name="cafeteria_id")
-    private Cafeteria cafeteria;
+    @JoinColumn(name="set_id")
+    private Set set;
 }
