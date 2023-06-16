@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:xmns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{ /style/auth.css }" href=""/>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <img src="./icons/Logo.png" alt="Logo" />
+          </li>
+          <li class="header__item">
+            <a class="btn" href="">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="form">
+      <div action="" class="form__wrapper">
+        <h2 class="title">Registration to Tamaq</h2>
+        <div class="form__top">
+          <span class="pargrph">Already registered?</span>
+          <a class="link" href="">Enter</a>
+        </div>
+        <form action="" class="form__input">
+          <div class="input">
+            <img class="input__icon" src="./icons/profile.svg" alt="" />
+            <input class="input__input" type="text" placeholder="Full name" />
+          </div>
+          <br />
+
+          <div class="input">
+            <img class="input__icon" src="./icons/envelope.svg" alt="" />
+            <input
+              class="input__input"
+              type="email"
+              placeholder="Email address"
+            />
+          </div>
+          <br />
+          <div class="input">
+            <img class="input__icon" src="./icons/password.svg" alt="" />
+            <input
+              class="input__input"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <input
+            type="submit"
+            value="Register via email"
+            class="submit__btn submit"
+          />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
