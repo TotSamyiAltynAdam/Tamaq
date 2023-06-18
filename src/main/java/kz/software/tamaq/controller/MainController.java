@@ -19,4 +19,5 @@ public class MainController {
     System.out.println("main page");
     return "index";
   }
+
 }

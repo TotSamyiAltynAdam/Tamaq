@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,19 +17,14 @@ public class FoodSet {
     private Long id;
 
     @ManyToMany
-    private List<Food> foodList;
-
-    @OneToOne
-    @JoinColumn(name="type_id", referencedColumnName = "id")
-    private Type type;
+    private List<Food> foodList = new ArrayList<>();
 
 
     @Column(name="count")
     private Long count;
 
-    @ManyToMany
-    private List<Apparat> apparatList;
+//    @OneToOne
+//    private Apparat apparat;
 
-    @Column(name="date")
-    private LocalDateTime date;
+
 }

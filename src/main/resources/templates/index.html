@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:xmn.s="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" th:href=" @{ style/style.css }">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" th:href=" @{ /style/style.css }">
     <title>Document</title>
 </head>
-
 <body>
 
     <div class="main_block">
         <div class="container">
             <nav>
                 <a href="#">
-                    <img th:src="@{ icons/Logo.png }" alt="logo" class="logo">
+                    <img th:src="@{ /icons/Logo.png }" alt="logo" class="logo">
                 </a>
-                <button class="logIng_btn">
+                <!-- If not authorized -->
+                <!-- <button class="logIng_btn">
                     Log In
-                </button>
+                </button> -->
+
+
+                <!-- If authorized -->
+                <img onclick="showDragDownList()" th:src="@{ /icons/profile.svg }" alt="">
+
+                <div class="profile_list">
+                    <h2>Hi, Yeldos!</h2>
+                    
+
+                    <div class="profile_block">
+                        <div class="profile_block_left">
+                            <p class="profile_title">Name</p>
+                            <p>Yeldos Anarbayev</p>
+                        </div>
+                        <div class="profile_block_right">
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="profile_block">
+                        <div class="profile_block_left">
+                            <p class="profile_title">Email</p>
+                            <p>20232911@unist.ac.kr</p>
+                        </div>
+                        <div class="profile_block_right">
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                    <div class="profile_block">
+                        <div class="profile_block_left">
+                            <p class="profile_title">Phone number</p>
+                            <p>8 777 777 77 77</p>
+                        </div>
+                        <div class="profile_block_right">
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                    <div class="profile_block">
+                        <div class="profile_block_left">
+                            <p class="profile_title">Password</p>
+                            <input type="password" value="123456">
+                        </div>
+                        <div class="profile_block_right">
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <p class="profile_title">Payment history</p>
+                        <a class="payment_btn" href="">
+                            <img width="25px" th:src="@{ /icons/payment.svg }" alt="">
+                            <span>Look history</span>
+                        </a>
+                    </div>
+                </div>
+
             </nav>
             <div class="main_panel">
                 <div class="main_title">
@@ -28,19 +84,19 @@
                     <div class="cafeteria_choosing">
                         <div class="cafeteria">
                             <a href="#">
-                                <img th:src="@{ icons/cafeteria_1.png }" alt="cafeteria1">
+                                <img th:src="@{ /icons/cafeteria_1.png }" alt="cafeteria1">
                                 <span>Cafeteria-1</span>
                             </a>
                         </div>
                         <div class="cafeteria">
                             <a href="#">
-                                <img th:src="@{ icons/cafeteria_2.png }" alt="cafeteria2">
+                                <img th:src="@{ /icons/cafeteria_2.png }" alt="cafeteria2">
                                 <span>Cafeteria-2</span>
                             </a>
                         </div>
                         <div class="cafeteria">
                             <a href="#">
-                                <img th:src="@{ icons/cafeteria_3.png }" alt="cafeteria3">
+                                <img th:src="@{ /icons/cafeteria_3.png }" alt="cafeteria3">
                                 <span>Cafeteria-3</span>
                             </a>
                         </div>
@@ -48,9 +104,10 @@
                     <div class="search_food">
                         <div class="search_input">
                             <label class="left_part" for="searchFoodInput">
-                                <img th:src="@{ icons/search_restaurant.svg }" alt="search_restaurant">
+                                <img th:src="@{ /icons/search_restaurant.svg }" alt="search_restaurant">
                             </label>
                             <input id="searchFoodInput" class="right_part" placeholder="The name of food">
+                            </input>
                         </div>
                         <button class="optimal_food_btn">
                             Optimal food
@@ -59,19 +116,19 @@
                     <div class="food_choosing">
                         <div class="food">
                             <a href="#">
-                                <img th:src="@{ icons/korean.png }" alt="korean">
+                                <img th:src="@{ /icons/korean.png }" alt="korean">
                                 <span>Korean</span>
                             </a>
                         </div>
                         <div class="food">
                             <a href="#">
-                                <img th:src="@{ icons/halal.png }" alt="halal">
+                                <img th:src="@{ /icons/halal.png }" alt="halal">
                                 <span>Halal</span>
                             </a>
                         </div>
                         <div class="food">
                             <a href="#">
-                                <img th:src="@{ icons/vegeterian.png }" alt="vegeterian">
+                                <img th:src="@{ /icons/vegeterian.png }" alt="vegeterian">
                                 <span>Vegeterian</span>
                             </a>
                         </div>
@@ -80,13 +137,13 @@
             </div>
         </div>
         <div class="polygon">
-            <img th:src="@{ img/polygon.png }" alt="polygon">
+            <img th:src="@{ /img/polygon.png }" alt="polygon">
         </div>
     </div>
     <div class="dish_block">
         <div class="container">
             <div class="dish_title">
-                <img th:src="@{ icons/actual.png }" alt="actualDay">
+                <img th:src="@{ /icons/actual.png }" alt="actualDay">
                 <span>Today's dishes - 23.05.2023 Tuesday</span>
             </div>
             <section class="dish_content">
@@ -105,9 +162,9 @@
                                     Lunch
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchVegeterian">
                                 </div> 
                             </div>
                             <div class="cafeteria_food_type">
@@ -115,9 +172,9 @@
                                     Dinner
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerVegeterian">
                                 </div> 
                             </div>
                         </div>
@@ -133,9 +190,9 @@
                                     Lunch
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchVegeterian">
                                 </div> 
                             </div>
                             <div class="cafeteria_food_type">
@@ -143,9 +200,9 @@
                                     Dinner
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerVegeterian">
                                 </div> 
                             </div>
                         </div>
@@ -161,9 +218,9 @@
                                     Lunch
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="lunchVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="lunchVegeterian">
                                 </div> 
                             </div>
                             <div class="cafeteria_food_type">
@@ -171,9 +228,9 @@
                                     Dinner
                                 </div>   
                                 <div class="cafeteria_food_time_setOfFood">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerHalal">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerKorean">
-                                    <img th:src="@{ img/beshbarmak.jpg }" alt="dinnerVegeterian">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerHalal">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerKorean">
+                                    <img th:src="@{ /img/beshbarmak.jpg }" alt="dinnerVegeterian">
                                 </div> 
                             </div>
                         </div>
@@ -184,6 +241,6 @@
             </section>
         </div>
     </div>
-
+    <script th:src="@{ /js/script.js }"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ package kz.software.tamaq.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,6 +18,7 @@ public class Cafeteria {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "cafeteria")
-    private List<Apparat> apparatList;
+    @OneToMany()
+    @JoinColumn(name = "cafeteria_id")
+    private List<Apparat> apparatList = new ArrayList<>();
 }

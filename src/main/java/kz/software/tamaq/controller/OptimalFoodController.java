@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-@RequestMapping("optimalFood/")
+@RequestMapping("/optimalFood")
 public class OptimalFoodController {
 
   @GetMapping

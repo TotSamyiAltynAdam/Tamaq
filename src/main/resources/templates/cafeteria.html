@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:xmn.s="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/cafeteria.css" />
+    <link rel="stylesheet" th:href="@{ /style/cafeteria.css }" />
     <title>Cafeteria</title>
+    <script th:src="@{ /js/script.js }"></script>
   </head>
   <body>
+
     <header class="header">
       <div class="shanyrak">Cafeteria-1</div>
     </header>
@@ -55,10 +58,118 @@
     </div>
     <section class="content">
       <div class="container">
+        <div class="food hidden-div">
+          <img
+            onclick="hideFood()"
+            class="closeFood"
+            th:src="@{ /icons/close.svg }"
+            alt=""
+          />
+          <div class="food__wrapper">
+            <h2>Rice</h2>
+            <div class="food__block">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <div class="food__block__left">
+                <p>98%</p>
+                <img th:src="@{ /icons/like (1).png}" alt="" />
+                <p>(777)</p>
+              </div>
+            </div>
+            <div class="food__block">
+              <div class="food_block_ing">
+                <h4>Ingredients</h4>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+                <ul class="ing__list">
+                  <li class="ing__item">onion</li>
+                  <li class="ing__item">500g</li>
+                </ul>
+              </div>
+              <div class="food_block_rating">
+                <h4>Cafeteria-1</h4>
+                <form action="">
+                  <p>rating</p>
+                  <input class="rating" type="number" /> %
+
+                  <p>Desires/comments</p>
+                  <textarea name="" id="" cols="20" rows="4"></textarea>
+                  <br />
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="set hidden-div">
+          <h2>23.05.2023</h2>
+          <p>Halal</p>
+          <p>Lunch</p>
+          <img
+            onclick="hideSet()"
+            class="close"
+            th:src="@{ /icons/close.svg }"
+            alt=""
+          />
+          <ul class="setList">
+            <li class="setList__item">
+              <img onclick="showFood()" th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+            <li class="setList__item">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+            <li class="setList__item">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+            <li class="setList__item">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+            <li class="setList__item">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+            <li class="setList__item">
+              <img th:src="@{ /img/beshbarmak.jpg }" alt="" />
+              <b>300 kcal</b>
+            </li>
+          </ul>
+        </div>
+
         <ul class="food__type__list">
-          <li class="food__type__item">Halal</li>
-          <li class="food__type__item">Korean</li>
-          <li class="food__type__item">Vegetarian</li>
+          <li class="food__type__item">
+            halal
+          </li>
+          <li class="food__type__item">
+            korean
+          </li>
+          <li class="food__type__item">
+            vege
+          </li>
         </ul>
         <ul class="list__food">
           <li class="list__item list__item__title">23.05.2023</li>
@@ -66,59 +177,121 @@
             <ul class="list__food__type">
               <li class="list__food__item list__food__item__type">Lunch</li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
             </ul>
             <ul class="list__food__type">
-              <li class="list__food__item list__food__item__type">Dinner</li>
+              <li class="list__food__item list__food__item__type dinner">Dinner</li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
             </ul>
           </li>
         </ul>
+
         <ul class="list__food">
           <li class="list__item list__item__title">24.05.2023</li>
           <li class="list__item">
             <ul class="list__food__type">
               <li class="list__food__item list__food__item__type">Lunch</li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
             </ul>
             <ul class="list__food__type">
               <li class="list__food__item list__food__item__type">Dinner</li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
               <li class="list__food__item">
-                <img class="img__item" src="./img/beshbarmak.jpg" alt="" />
+                <img
+                  onclick="showSet()"
+                  class="img__item"
+                  th:src="@{ /img/beshbarmak.jpg }"
+                  alt=""
+                />
               </li>
             </ul>
           </li>
         </ul>
       </div>
     </section>
+
   </body>
 </html>

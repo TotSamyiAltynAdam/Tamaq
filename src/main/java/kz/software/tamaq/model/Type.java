@@ -1,5 +1,6 @@
 package kz.software.tamaq.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,4 +18,8 @@ public class Type {
 
     @Column(name="name")
     private String name;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "type")
+    private List<Apparat> apparatList;
 }
