@@ -108,11 +108,10 @@
                                 <img th:src="@{ /icons/search_restaurant.svg }" alt="search_restaurant">
                             </label>
                             <input id="searchFoodInput" class="right_part" placeholder="The name of food">
-                            </input>
                         </div>
-                        <button class="optimal_food_btn">
+                        <a th:href="@{'/optimalFood/'}" class="optimal_food_btn">
                             Optimal food
-                        </button>
+                        </a>
                     </div>
                     <div class="food_choosing">
                         <div class="food">
@@ -156,7 +155,7 @@
                 <div class="cafeterias">
 
                     <div class="cafeteria">
-                        <a href="#" class="cafeteria_name">Cafeteria-1</a>
+                        <a th:href="@{ cafeteria/1 }" class="cafeteria_name">Cafeteria-1</a>
                         <div class="cafeteria_food">
                             <div class="cafeteria_food_type">
                                 <div class="cafeteria_food_time_title">
@@ -184,7 +183,7 @@
                     </div>
                     
                     <div class="cafeteria">
-                        <a href="#" class="cafeteria_name">Cafeteria-2</a>
+                        <a th:href="@{ cafeteria/2 }" class="cafeteria_name">Cafeteria-2</a>
                         <div class="cafeteria_food">
                             <div class="cafeteria_food_type">
                                 <div class="cafeteria_food_time_title">
@@ -212,7 +211,7 @@
                     </div>
 
                     <div class="cafeteria">
-                        <a href="#" class="cafeteria_name">Cafeteria-3</a>
+                        <a th:href="@{ cafeteria/3 }" class="cafeteria_name">Cafeteria-3</a>
                         <div class="cafeteria_food">
                             <div class="cafeteria_food_type">
                                 <div class="cafeteria_food_time_title">

@@ -19,7 +19,7 @@ public class MainController {
   @Autowired
   private CafeteriaService cafeteriaService;
 
-  @GetMapping
+  @GetMapping(value = "/")
   public String mainPage(Model model) {
     model.addAttribute("cafeterias",cafeteriaService.findAll());
     return "index";

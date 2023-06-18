@@ -199,8 +199,11 @@ input[type="password"] {
 
 .main_block .main_panel .main_action .search_food .optimal_food_btn {
   cursor: pointer;
+  text-decoration: none;
+  display: block;
   margin: 0 auto;
   margin-top: 168px;
+  padding: 20px 20px;
   width: 255px;
   height: 81px;
   border-radius: 16px;
