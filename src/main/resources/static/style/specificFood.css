@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    margin-bottom: 80px;
+}
+  
+.shanyrak {
+background-image: url(../icons/shanyraq.svg);
+background-size: cover;
+height: 80px;
+text-align: center;
+padding-top: 25px;
+font-weight: 700;
+font-size: 25px;
+color: #000;
+}
+
+.buttonClass .buttons{
+    display: flex;
+    margin-top: 10px;
+    width: 109px;
+    justify-content: space-between; 
+    margin-left: 47px;
+}
+.buttonClass .buttons img{
+    display: block;
+}
+.buttonClass .buttons .prev{
+    display: block;
+    margin-right: 20px;
+}
+
+.justTitle div{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+.cafeteries{
+    margin-top: 25px;
+}
+.cafeteries .container{
+    padding: 0 188px;
+}
+.cafeteries .cafeteria_card{
+    box-sizing: border-box;
+    width: 690px;
+    height: 224px;
+    border: 1px solid #2D9E84;
+    border-radius: 13px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+.cafeteries .cafeteria_card .title{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 94px;
+    margin-left: 21px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.cafeteries .cafeteria_card .wrapper .set{
+    margin-right: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+.cafeteries .cafeteria_card .wrapper .set_lunch{
+    margin-top: 15px;
+}
+.cafeteries .cafeteria_card .wrapper .set_dinner{
+    margin-top: 28px;
+}
+.cafeteries .cafeteria_card .wrapper .set .set_title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFCA5B;
+}
+.cafeteries .cafeteria_card .wrapper .set_lunch .set_title{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.cafeteries .cafeteria_card .wrapper .set_dinner .set_title{
+    margin-top: 30px;
+}
+.cafeteries .cafeteria_card .wrapper .set img{
+    width: 165px;
+    height: 83px;
+    border-radius: 14px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 40px;
+    color: #FFCA5B;
+}

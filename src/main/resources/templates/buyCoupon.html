@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuySet</title>
+    <link rel="stylesheet" th:href="@{/style/buyset.css}">
+</head>
+<body>
+    <header class="header">
+        <div class="shanyrak">Halal</div>
+        <div class="second_header">
+            <div class="container">
+                <a href="#"><img class="prev" th:src="@{/icons/prev.svg}" alt=""></a>
+                <div class="money_wrapper">
+                    <div class="balance_wrapper">
+                        <img th:src="@{/icons/wallet.svg}" alt="">
+                        <div class="balance">Balance: 36000</div>
+                        <img th:src="@{/icons/coupon.svg}" alt="">
+                    </div>
+                    <div class="coupon_wrapper">
+                        <img th:src="@{/icons/coupon.svg}" alt="">
+                        <div class="coupon">Coupon: 10</div>
+                    </div>
+                </div>
+            </div>
+            <hr width="1191px" color="#FFCA5B"> 
+        </div>
+    </header>
+    <section class="set">
+        <div class="container">
+            <div class="title">Cafeteria 1</div>
+            <div class="set_wrapper">
+                <img class="set_img" th:src="@{/img/beshbarmak.jpg}" alt="">
+                <div class="details">
+                    <div class="set_name">Set Beshbarmaq</div>
+                    <div class="won">
+                        <img th:src="@{/icons/won-solid.svg}" alt="">
+                        <div class="price">10.000</div>
+                    </div>
+                    <div class="coupon">
+                        <img th:src="@{/icons/coupon.svg}" alt="">
+                        <div class="coupon_num">1</div>
+                    </div>
+                    <button>Buy</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+</body>
+</html> 

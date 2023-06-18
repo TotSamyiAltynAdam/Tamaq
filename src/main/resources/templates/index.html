@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:xmn.s="http://www.w3.org/1999/xhtml">
+<html lang="en" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,19 +82,21 @@
                 <div class="main_action">
                     <div class="cafeteria_choosing">
                         <div class="cafeteria">
-                            <a href="#">
+                            <a th:href="@{ cafeteria/1 }">
                                 <img th:src="@{ /icons/cafeteria_1.png }" alt="cafeteria1">
                                 <span>Cafeteria-1</span>
                             </a>
                         </div>
                         <div class="cafeteria">
-                            <a href="#">
+                            <a th:href="@{ cafeteria/2 }">
+
                                 <img th:src="@{ /icons/cafeteria_2.png }" alt="cafeteria2">
                                 <span>Cafeteria-2</span>
                             </a>
                         </div>
                         <div class="cafeteria">
-                            <a href="#">
+                            <a th:href="@{ cafeteria/3 }">
+
                                 <img th:src="@{ /icons/cafeteria_3.png }" alt="cafeteria3">
                                 <span>Cafeteria-3</span>
                             </a>

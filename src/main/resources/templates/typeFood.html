@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/specificFood.css">
+    <link rel="stylesheet" th:href="@{/style/specificFood.css}">
 </head>
 <body>
     <header class="header">
@@ -13,8 +13,8 @@
     </header>
     <section class="buttonClass">
         <div class="buttons">
-            <a href="#"><img class=prev" src="icons/prev.svg" alt=""></a>
-            <a href="#"><img class=next" src="icons/next.svg" alt=""></a>
+            <a href="#"><img class="prev" th:src="@{/icons/prev.svg}" alt=""></a>
+            <a href="#"><img class="next" th:src="@{/icons/next.svg}" alt=""></a>
         </div>
     </section>
     <section class="justTitle">
@@ -29,11 +29,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>
@@ -44,11 +44,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>
@@ -59,11 +59,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>
@@ -82,11 +82,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>
@@ -97,11 +97,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>
@@ -112,11 +112,11 @@
                 <div class="wrapper">
                     <div class="set set_lunch">
                         <div class="set_title">Lunch</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                     <div class="set set_dinner">
                         <div class="set_title">Dinner</div>
-                        <img src="img/beshbarmak.jpg" alt="besh">
+                        <img th:src="@{/img/beshbarmak.jpg}" alt="besh">
                     </div>
                 </div>
             </div>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/style/bootstrap.min.css}">
+    <script th:src="@{/js/bootstrap.bundle.js}"></script>
+    <title>Cafeteria</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+    </style>
+</head>
+<body>
+    <nav style="height: 143px;">
+        <div style="text-align:center;font-weight:bold;font-size:30px;margin-top:39px">Admin Panel</div>
+        <a href="#">
+            <img th:src="@{/icons/logout.png}" alt="logout" style="margin-left: 90%; width: 30px; height:30px;">
+        </a>
+    </nav>
+
+    <div class="main_block">    
+        <div class="container">
+            <button type="button" class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#createSet" style="margin-left:30%">
+                Create Set
+            </button>
+
+            <div class="modal fade" id="createSet" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="createSet" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #FFCA5B;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="createSet" style="font-weight:bold;">Setting a set</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="cafeteriaName" class="form mt-3" style="font-weight:bold;">Cafeteria name</label>
+                            <input type="text" class="form-control mt-2" id="cafeteriaName">
+
+                            <label for="apparatName" class="form mt-3" style="font-weight:bold;">Apparat name</label>
+                            <input type="text" class="form-control mt-2" id="apparatName">
+
+                            <label for="setType" class="form mt-3" style="font-weight:bold;">Set type</label>
+                            <input type="text" class="form-control mt-2" id="setType">
+
+                            <label for="Lunch/dinner" class="form mt-3" style="font-weight:bold;">Lunch/dinner</label>
+                            <input type="text" class="form-control mt-2" id="Lunch/dinner">
+
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#addFood" style="margin-left:25%">
+                Add Food
+            </button>
+
+            <div class="modal fade" id="addFood" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addFood" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #FFCA5B;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="addFood" style="font-weight:bold;">Adding a food</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <label for="foodName" class="form mt-3" style="font-weight:bold;">Food name</label>
+                            <input type="text" class="form-control mt-2" id="foodName">
+
+                            <label for="ingredients" class="form mt-3" style="font-weight:bold;">Ingredients</label>
+                            <input type="text" class="form-control mt-2" id="ingredients">
+
+                            <label for="amount" class="form mt-3" style="font-weight:bold;">Amount</label>
+                            <input type="text" class="form-control mt-2" id="amount">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img th:src="@{/icons/cup.png}" alt="CupSetting" style="display: block; margin: 0 auto; width: 30%;margin-top: 5%;">
+        </div>
+    </div>
+
+</body>
+</html>

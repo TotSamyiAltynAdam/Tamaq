@@ -15,6 +15,6 @@ public class OptimalFoodController {
 
   @GetMapping
   public String optimalFoodPage() {
-    return "optimalFood";
+    return "optimal";
   }
 }

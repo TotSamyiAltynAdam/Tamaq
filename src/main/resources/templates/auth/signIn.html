@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:xmns="http://www.w3.org/1999/xhtml">
+<html lang="en" xlmns:th="http://www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -13,7 +12,7 @@
     <div class="container">
         <ul class="header__list">
             <li class="header__item">
-                <img src="./icons/Logo.png" alt=""/>
+                <img th:src="@{/icons/Logo.png}" alt=""/>
             </li>
             <li class="header__item">
                 <a class="btn" href="">Log In</a>
@@ -30,7 +29,7 @@
         </div>
         <form action="" class="form__input">
             <div class="input">
-                <img class="input__icon" src="./icons/id.svg" alt=""/>
+                <img class="input__icon" th:src="@{/icons/id.svg}" alt=""/>
                 <input
                         class="input__input"
                         type="text"
@@ -40,7 +39,7 @@
             <br/>
 
             <div class="input">
-                <img class="input__icon" src="./icons/password.svg" alt=""/>
+                <img class="input__icon" th:src="@{/icons/password.svg}" alt=""/>
                 <input
                         class="input__input"
                         type="password"

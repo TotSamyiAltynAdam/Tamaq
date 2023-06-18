@@ -4,17 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * @author Nurs Tech
- * @project Tamaq;
- */
-
 @Controller
-@RequestMapping("/toplist")
-public class ListTopController {
-
-  @GetMapping("/")
-  public String topListPage() {
-    return "toplist";
-  }
+@RequestMapping("/typeFood")
+public class TypeFoodController {
+    @GetMapping("/")
+    public String specificFood() {
+        return "typeFood";
+    }
 }
+

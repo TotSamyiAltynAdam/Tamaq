@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    margin-bottom: 80px;
+}
+  
+.shanyrak {
+background-image: url(../icons/shanyraq.svg);
+background-size: cover;
+height: 80px;
+text-align: center;
+padding-top: 25px;
+font-weight: 700;
+font-size: 25px;
+color: #000;
+}
+
+.second_header{
+    padding-top: 35px;
+}
+.second_header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 188px;
+}
+.second_header .money_wrapper{
+    display: flex;
+    align-items: center;
+}
+.second_header .money_wrapper .balance_wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+}
+
+.second_header .money_wrapper .coupon_wrapper{
+    display: flex;
+    align-items: center;
+}
+.second_header .money_wrapper .balance_wrapper img{
+    width: 30px;
+    height: 30px;
+}
+.second_header .money_wrapper .balance_wrapper div, .coupon_wrapper div{
+    font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+.second_header .money_wrapper .balance_wrapper img:first-child, .coupon_wrapper img{
+    margin-right: 5px;
+}
+hr{
+    margin-top: 15px;
+    margin-left: 170px;
+}
+
+
+.set{
+    margin-top: 58px;
+}
+.set .container{
+    padding: 0 188px;
+}
+.set .title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-left: 90px;
+}
+.set .set_wrapper{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 90px;
+
+}
+.set .set_wrapper .set_img{
+    width: 288px;
+    height: 234px;
+    border-radius: 14px;
+}
+.set .set_wrapper .details{
+    margin-left: 72px;
+}
+.set .set_wrapper .details .set_name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.set .set_wrapper .details .won{
+    margin-top: 18px;
+    display: flex;
+}
+.set .set_wrapper .details .won div, .set .set_wrapper .details .coupon div{
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 42px;
+}
+.set .set_wrapper .details .coupon{
+    display: flex;
+}
+
+.set .set_wrapper .details button{
+    width: 200px;
+    height: 62px;
+    left: 638px;
+    top: 508px;
+
+    background: #FFCA5B;
+    border-radius: 12px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #000000;
+    margin-top: 30px;
+}

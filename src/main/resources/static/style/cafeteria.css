@@ -112,12 +112,6 @@
   font-weight: 700;
 }
 
-.list__food__item {
-  border: 1px solid orange;
-  min-width: 150px;
-  min-height: 50px;
-}
-
 .food__type__list {
   display: flex;
   max-width: 50%;
@@ -157,7 +151,6 @@
   height: 400px;
   width: 400px;
   /* background-color: #fff; */
-  border: 1px solid red;
   z-index: 2;
   text-align: center;
 }
@@ -187,7 +180,6 @@
 .food__block {
   display: flex;
   align-items: stretch;
-  border: 1px solid orange;
   gap: 40px;
 }
 .food_block_ing {
