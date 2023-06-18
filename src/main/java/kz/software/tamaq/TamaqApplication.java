@@ -13,13 +13,14 @@ import kz.software.tamaq.repository.TypeRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
 
 @SpringBootApplication
-public class TamaqApplication {
+public class TamaqApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(TamaqApplication.class, args);
