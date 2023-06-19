@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * @author Nurs Tech
- * @project Tamaq;
- */
-
 @Controller
 @RequestMapping("/cafeteria")
 public class CafeteriaController {
